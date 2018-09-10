@@ -1,0 +1,21 @@
+#club-location {
+    display: block;
+    width: 100%;
+    height: 450px;
+    background: #58B;
+}
+
+.discord {
+    background-color: #7289DA;
+}
+
+.facebook {
+    background-color: #4267B2;
+}
+
+.discord, .facebook {
+    color: #FFFFFF;
+    font-size: larger;
+    padding: 15px;
+    text-align: center;
+}

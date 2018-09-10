@@ -1,0 +1,38 @@
+/*!
+ * Start Bootstrap - Portfolio Item (https://startbootstrap.com/template-overviews/portfolio-item)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+/*!
+ * End Bootstrap - Portfolio Item (https://startbootstrap.com/template-overviews/portfolio-item)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
+ */
+
+/*
+ * Start Local Bootstrap adjustments
+ */
+.container .row:first-child {
+    margin-top: 15px;
+}
+
+ul li ul.sub-list {
+    padding-left: 20px;
+}
+ul li ul.sub-list li {
+    font-size: small;
+}
+/*
+ * End Local Bootstrap adjustments
+ */
