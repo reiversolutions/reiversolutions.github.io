@@ -5,17 +5,21 @@
     background: #58B;
 }
 
-.discord {
-    background-color: #7289DA;
+.slack {
+    background-color: #4D394B;
 }
 
 .facebook {
     background-color: #4267B2;
 }
 
-.discord, .facebook {
+.slack, .facebook {
     color: #FFFFFF;
     font-size: larger;
     padding: 15px;
     text-align: center;
+}
+
+a.no-style {
+    text-decoration: none;
 }
