@@ -23,3 +23,39 @@
 a.no-style {
     text-decoration: none;
 }
+
+.game-desc img.game-poster {
+    max-height: 350px;
+}
+
+.game-desc div.day-of-week {
+    float: right;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.game-desc div.hr.day-of-week {
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+}
+
+.game-desc div.hr.day-of-week.tuesday {
+    background-color: #58B;
+}
+
+.game-desc div.hr.day-of-week.thursday {
+    background-color: forestgreen;
+}
+
+footer .social {
+    text-align: center;
+}
+
+footer .social a {
+    margin: 0 10px;
+}
+footer .social i {
+    padding: 5px;
+    font-size: 1.2rem;
+}
