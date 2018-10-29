@@ -48,6 +48,22 @@ a.no-style {
     background-color: forestgreen;
 }
 
+.game-desc div.hr.day-of-week.sunday {
+    background-color: sienna;
+}
+
+.day-of-week-text.tuesday {
+    color: #58B;
+}
+
+.day-of-week-text.thursday {
+    color: forestgreen;
+}
+
+.day-of-week-text.sunday {
+    color: sienna;
+}
+
 i.small-icon {
     font-size: 1rem;
 }
