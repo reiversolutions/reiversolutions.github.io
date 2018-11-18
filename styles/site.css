@@ -1,71 +1,11 @@
-img.h1-logo {
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    display: block;
-}
-
-.slack {
-    background-color: #4D394B;
-}
-
-.facebook {
-    background-color: #4267B2;
-}
-
-.slack, .facebook {
-    color: #FFFFFF;
-    font-size: larger;
-    padding: 15px;
-    text-align: center;
-}
-
-a.no-style {
-    text-decoration: none;
-}
-
-.game-desc img.game-poster {
-    max-height: 350px;
-}
-
-.game-desc div.day-of-week {
-    float: right;
-    font-weight: bolder;
-    font-size: large;
-}
-
-.game-desc div.hr.day-of-week {
-    height: 5px;
-    width: 100%;
-    background-color: #000;
-}
-
-.game-desc div.hr.day-of-week.tuesday {
-    background-color: #58B;
-}
-
-.game-desc div.hr.day-of-week.thursday {
-    background-color: forestgreen;
-}
-
-.game-desc div.hr.day-of-week.sunday {
-    background-color: sienna;
-}
-
-.day-of-week-text.tuesday {
-    color: #58B;
-}
-
-.day-of-week-text.thursday {
-    color: forestgreen;
-}
-
-.day-of-week-text.sunday {
-    color: sienna;
-}
 
 i.small-icon {
     font-size: 1rem;
+}
+
+/*** Footer ***/
+footer.bg-dark {
+    background-color: #9A3234 !important;
 }
 
 footer .social {
@@ -75,7 +15,9 @@ footer .social {
 footer .social a {
     margin: 0 10px;
 }
+
 footer .social i {
     padding: 5px;
     font-size: 1.2rem;
 }
+/*** /Footer ***/
