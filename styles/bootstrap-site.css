@@ -5,13 +5,13 @@
  */
 
 body {
-    padding-top: 14px;
+    padding-top: 0;
     font-size: 1.5rem;
 }
 
 @media (min-width: 992px) {
     body {
-        padding-top: 16px;
+        padding-top: 0;
     }
 }
 
@@ -24,8 +24,9 @@ body {
 /*
  * Start Local Bootstrap adjustments
  */
-.container .row:first-child {
+.container .row {
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 ul li ul.sub-list {

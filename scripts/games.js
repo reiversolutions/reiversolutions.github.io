@@ -1,0 +1,125 @@
+var GamesPage = (function () {
+	
+	init = function() {
+		initGames();
+	}
+
+	initGames = function() {
+		// Create game details
+		var games = [
+			{
+				title: 'Steel System',
+				short: 'The Steel System is a generic rpg that can be used for any rpg setting with little change.',
+				image: './resources/games/steel-system.png',
+				description: [
+					'The Steel System is inspired by the Wushu System but a few things have been changed. I&apos;ve tried to keep the Player/GM retort that I liked about Wushu and added as much as possible to try and entice players into describing more. Task resolution is a bit more individual, making it similar to traditional rpg&apos;s. This has its pros and cons but the positives are that the barrier to entry is lowered and people can be eased into the idea of describing their actions more adventurous. The dice pool has changed from d6 to d10. This is simply because I&apos;m a massive Exalted fan and the more dice, the better.',
+					'The steel system has been realised completely free under the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> meaning that it can be modified or hacked as well as distributed through any means, be it commercial or open source. If you do choose to hack the Steel System please get in touch. I&apos;d love to read the outcome.'
+				],
+				links: [
+					{ title: 'Rules', url: 'http://bit.ly/2b9GGxb' },
+					{ title: 'Character Sheet (Spreadsheet)', url: 'https://docs.google.com/spreadsheets/d/1VrIXraE6wsWH2ieaofhanPIxB2ggyHG2DADCLSQOz_E/edit?usp=sharing' },
+					{ title: 'Character Sheet (PDF)', url: 'https://drive.google.com/file/d/0B-f_pFUj5mdMVjR4MDVUQlBtT3M/view?usp=sharing' }
+				]
+			},
+			{
+				title: 'Kung Fu Panda',
+				subTitle: 'The Bodacious rpg',
+				short: 'Kung Fu bodacious ass kicking built with the Steel System. Skadoosh.',
+				image: './resources/games/panda.png',
+				description: [
+					'Train at the Jade Palace and help Po defeat evil mmasterminds, protect the valley of peace from dangers and most of all help him get out of trouble.',
+					'Kung Fu Panda takes place in a fictional alternate China populated entirely by anthropomorphic animals in an era where martial arts still play an integral role in people&apos;s daily lives. It centers around Po; a Panda, Kung Fu fan boy and also the Dragon Warrior. Awesome.',
+					'His task, along with the Furious Five and Master Shifu is to keep the Valley of Peace safe from a never ending series of catastrophes that seems to hit this tranquil little town.',
+					'The Steel System handles fast combat motivating your players to provide over the top descriptions to give you the kung fu feel of the cartoon. The book is a stand alone rpg giving you all the rules and advice to play with Po.'
+				],
+				links: [
+					{ title: 'Rules', url: 'http://bit.ly/2acVJ5l' }
+				],
+				disclaimer: 'Kung Fu Panda &copy; is owned by DreamWorks Animation LLC. All Rights Reserved. I do not own any of the Kung Fu Panda intellectual property or claim to do so.'
+			},
+			{
+				title: 'Hometime Adventures',
+				short: 'Hometime Adventures is an rpg set about the house and players take on the roles of children&apos;s toys. They protect the house and sometimes the big bipedal animals that live there.',
+				image: './resources/games/hometime-adventures.jpg',
+				description: [
+					'Characters are unique toys that can sometimes be a Frankenstein&apos;s monster of different toys. The skill system is based very much on the right tool for the job and stitching together different parts may help you overcome obstacles in your way. Although the game can be played with small children. It&apos;s the dark undertones that make the game special. The toys should explore the grim things that are always around children but maybe they don&apos;t see.',
+					'This was my entry for <a href="http://halfmeme.com/">Paul Czege</a>&apos;s <small>(Author of <a href="http://halfmeme.com/clay.html" alt="Clay that woke">The Clay that Woke</a>)</small> #threeforged rpg challenge. The idea was to create an anonymous rpg that would be modified by three other contestants to create an rpg that was the combined sum of three rpg designers.',
+					'Unfortunately I was one of the unlucky designers who&apos;s entry had no work done on it. Both designers who were assigned to work on my game for stage 2 and 3 did not hand in any changes. If you wish to try and improve my entry, the google doc below has comments switched and it would be much appreciated.'
+				],
+				links: [
+					{ title: 'Rules', url: 'https://docs.google.com/document/d/13HdMIMUQ-34NXWd7MuNNGrN8qdZkFsMv8tvPs_NG4gE/edit?usp=sharing' },
+					{ title: '#threeforged RPG challenge', url: 'http://halfmeme.com/threeforged.html' }
+				]
+			},
+			{
+				title: 'Demon Hamster Necromancers',
+				subTitle: 'of the Abyss',
+				short: 'Play as a demonic hamster backed with the power of Necromancy.',
+				image: './resources/games/demon-hamster.jpg',
+				description: [
+					'This was my entry for <a href="http://schirduans.com/david/">David Schirduan</a>&apos;s <small>(Author of <a href="http://schirduans.com/david/my-creations/mythic-mortals" alt="Mythic Mortals">Mythic Mortals</a>, <a href="https://twitter.com/DavidSchirduan" alt="David Schirduan Twitter">@DavidSchirduan</a>)</small> 2016 200 word rpg challenge. The idea was to create a playable roleplaying game in 200 words or less.',
+					'I created a game called <a href="https://docs.google.com/document/d/1sqLMDq7a_xWOCBTv8CrRa_27A6SeUiBaXLo7_TD-FF4/edit?usp=sharing" alt="Noughts and Crosses">Demon Hamster Necromancers of the Abyss</a> which is about <strike>rolling a metric ton of dice</strike> a group of necromancers roaming the world creating trouble. These demonic hamsters invade lands or rescue them from greater evil. Those that impose them become their faithful undead servants.',
+					'Kill enemies, resurrect minions. Repeat.'
+				],
+				links: [
+					{ title: 'Rules', url: 'https://docs.google.com/document/d/1sqLMDq7a_xWOCBTv8CrRa_27A6SeUiBaXLo7_TD-FF4/edit?usp=sharing' },
+					{ title: '200 word RPG challenge', url: 'https://200wordrpg.github.io' }
+				]
+			},
+			{
+				title: 'Noughts and Crosses',
+				short: 'Is the power they bring really worth having your body become a play thing?',
+				image: './resources/games/noughts-and-crosses.png',
+				description: [
+					'This was my entry for <a href="http://schirduans.com/david/">David Schirduan</a>&apos;s <small>(Author of <a href="http://schirduans.com/david/my-creations/mythic-mortals" alt="Mythic Mortals">Mythic Mortals</a>, <a href="https://twitter.com/DavidSchirduan" alt="David Schirduan Twitter">@DavidSchirduan</a>)</small> 2015 200 word rpg challenge. The idea was to create a playable roleplaying game in 200 words or less.',
+					'I created a game called <a href="http://schirduans.com/david/wp-content/uploads/2015/04/NoughtsAndCrosses.pdf" alt="Noughts and Crosses">Noughts and Crosses</a> which is all about conflicting interests and using power over your morals. In the game you play ordinary people who are in touch with another conscious. This could be anything from an ancestral spirit that has watched over your family for generation to something more sinister like a genetically engineered symbiote that a mad scientist injected into you.',
+					'Whatever the reason, you hear voices in your head. Sometimes they help you with powers beyond your belief but nothing is free. They have goals of their own. Each time they help it becomes easier and easier for them to take control of your own body.'
+				],
+				links: [
+					{ title: 'Rules', url: 'http://schirduans.com/david/wp-content/uploads/2015/04/NoughtsAndCrosses.pdf' },
+					{ title: '200 word RPG challenge', url: 'https://200wordrpg.github.io' }
+				]
+			}
+		];
+	
+		// Bind game details
+		games.forEach(game => {
+			appendGame(game);
+		});
+	}
+
+	appendGame = function(game) {
+		var imgContainer = `<div class="col-lg-4"><div class="img-container" ><img src="${game.image}" alt="${game.title}" /></div></div>`,
+			detailContainer = `<div class="col-lg-8"><h2 class="mt-1" >${game.title} ${game.subTitle ? `<small>${game.subTitle}</small>` : ''}</h2> <p>${game.short}</p></div>`;
+
+		var descriptionStr = "";
+		game.description.forEach(desc => {
+			descriptionStr += `<p>${desc}</p>`;
+		});
+
+		var linksStr = "";
+		game.links.forEach(link => {
+			linksStr += `<a href="${link.url}" class="link-game" >${link.title}</a>`
+		});
+		linksStr = `<div class="text-center">${linksStr}</div>`
+
+		var	baseContainer = `<div class="row">${imgContainer} ${detailContainer}</div>`,
+			descriptionContainer = `<div class="row"><div class="col-lg-12">${descriptionStr}</div></div>`,
+			footerContainer = `<div class="row"><div class="col-lg-12">${linksStr} ${game.disclaimer ? `<p><small>${game.disclaimer}</small></p>` : ''}</div></div>`,
+			container = `<div class="row"><div class="col-lg-12">${baseContainer} ${descriptionContainer} ${footerContainer} <hr/></div></div>`;
+
+		$('#container-games').append(container);
+	}
+
+	initAddons = function() {
+
+	}
+
+	return {
+		init: init
+	};
+})();
+
+$( document ).ready(function() {
+	GamesPage.init();
+});
