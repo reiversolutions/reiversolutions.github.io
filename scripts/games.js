@@ -150,7 +150,7 @@ var GamesPage = (function () {
 					'<a href="http://schirduans.com/david/my-creations/jedi-wushu" alt="David Schirduan">Jedi Wushu</a> is the star wars hack of the Wushu system. To get started follow the link to some pre-gen Jedi padawans and their masters.'
 				],
 				links: [
-					{ title: 'Rules', url: 'http://bit.ly/1d8X6n9' }
+					{ title: 'Pregenerated Characters', url: 'http://bit.ly/1d8X6n9' }
 				]
 			},
 			{
