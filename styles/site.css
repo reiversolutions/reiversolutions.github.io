@@ -7,6 +7,11 @@ i.small-icon {
     background-color: #9A3234 !important;
 }
 
+blockquote.blockquote {
+    border-left: #6c757d99 4px solid;
+    padding-left: 10px;
+}
+
 /*** Games ***/
 .img-container {
     width: 80%;

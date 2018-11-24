@@ -2,6 +2,8 @@ var GamesPage = (function () {
 	
 	init = function() {
 		initGames();
+		initExternal();
+		initAddons();
 	}
 
 	initGames = function() {
@@ -87,14 +89,100 @@ var GamesPage = (function () {
 			appendGame(game);
 		});
 	}
-
-	initAddons = function() {
-		
-	}
 	
 	appendGame = function(game) {
+		var container = buildGame(game);
+		$('#container-games').append(container);
+	}
+
+	initExternal = function() {
+		// Create game details
+		var external = [
+			{
+				title: 'Mythic Mortals',
+				image: './resources/addons/MythicMortals.jpg',
+				short: 'Mythic Mortals is a Tabletop Role-Playing Game where you and your friends play as your real-world selves suddenly granted incredible powers. Created by <a href="" alt="David Schirduan">David Schirduan</a> the game focuses on providing short, satisfying play sessions filled with action-packed combat, it’s perfect for jumping right into the action!',
+				description: [
+					'Inspired by the work I was doing on my own Heavy Metal rpg <small>(Still work in progress, Metal Overtüre)</small> and the power of Rock/Metal music I was asked to create a playmat for the successful <a href="https://www.kickstarter.com/projects/464972563/mythic-mortals" >Kickstarter</a>.',
+					'<h4 class="mt-4">The Metalhead</h4>',
+					'The Metalhead focuses on crowd manipulation but also has enough force to headbutt someone through a wall.',
+					'<blockquote class="blockquote"><p class="mb-0"><small>Okay, I LOVE the Metalhead! Normally IRL I prefer playing more dulcit tones, but I think I might have a lot of fun with this one. Bards are a great concept in any game, but this &apos;rock bard&apos; may be the best execution I&apos;ve seen ever!</small></p> <footer class="blockquote-footer">Eric Sheldahl, playtester for Mythic Mortals</footer></blockquote>',
+					'You can grab this playmat now by picking up the <a href="http://www.drivethrurpg.com/browse/pub/6897/Technical-Grimoire-Games">Crowd Pleasers</a> expansion. Not only do you get the Metalhead but you also get The Gunfighter by <a href="http://lookrobot.co.uk/games/">Grant Howitt</a>, renowned for his fun loving game Goblin Quest and The Wrestler by <a href="https://ndpdesign.com/">Nathan Paoletta</a>, famous for the PbtA game World Wide Wrestling. You&apos;ll also get the adventure "4 Dangerous Bosses" that is being advertised as a serious challenge, even for veterans.'
+				],
+				links: [
+					{ title: 'mythicmortals.com', url: 'http://mythicmortals.com/' },
+					{ title: 'Drive Thru RPG', url: 'https://www.drivethrurpg.com/product/204945/Mythic-Mortals-Multiplied?manufacturers_id=6897' }
+				]
+			}
+		];
+	
+		// Bind game details
+		external.forEach(addon => {
+			appendExternal(addon);
+		});
+	}
+	
+	appendExternal = function(addon) {
+		var container = buildGame(addon);
+		$('#container-other').append(container);
+	}
+
+	initAddons = function() {
+		// Create game details
+		var addons = [
+			{
+				title: 'Why are Slimes only found in caves?',
+				subTitle: 'FATE Core Supplement',
+				image: './resources/addons/gelatinous_blob.jpg',
+				description: [
+					'A <a href="http://fate-srd.com/" alt="FATE Core Standard">FATE core</a> supplement for building characters by gaining skills and stunts from fallen foes.',
+					'Built as a supplement for 2016 200 word rpg challenge.'
+				],
+				links: [
+					{ title: 'Rules', url: 'http://bit.ly/1T7vJYm' }
+				]
+			},
+			{
+				title: 'Jedi pre-gens',
+				subTitle: 'Wushu RPG Supplement',
+				image: './resources/addons/jedi-wushu.png',
+				description: [
+					'<a href="http://schirduans.com/david/my-creations/jedi-wushu" alt="David Schirduan">Jedi Wushu</a> is the star wars hack of the Wushu system. To get started follow the link to some pre-gen Jedi padawans and their masters.'
+				],
+				links: [
+					{ title: 'Rules', url: 'http://bit.ly/1d8X6n9' }
+				]
+			},
+			{
+				title: 'Ninja addons & Apprentices',
+				subTitle: 'Wu Xing: The ninja crusade Supplements',
+				image: './resources/addons/wuxing-ninja-crusade-logo.jpg',
+				description: [
+					'A few supplements for <a href="http://thirdeyegames.net/wu-xing-the-ninja-crusade/">Wu Xing: The Ninja Crusade</a> including an apprentice system and various new Wushu'
+				],
+				links: [
+					{ title: 'Apprentice system', url: 'http://bit.ly/1d8X6n9' },
+					{ title: 'New Weapons', url: 'http://bit.ly/1LWBqpI' },
+					{ title: 'New Way of Mirrors Path', url: 'http://bit.ly/1d8X6n9' },
+					{ title: 'Custom Way of Survival Wushu', url: 'http://bit.ly/1d8X6n9' }
+				]
+			}
+		];
+	
+		// Bind game details
+		addons.forEach(addon => {
+			appendAddon(addon);
+		});
+	}
+	
+	appendAddon = function(addon) {
+		var container = buildGame(addon);
+		$('#container-addons').append(container);
+	}
+
+	buildGame = function(game) {
 		var imgContainer = `<div class="col-lg-4"><div class="img-container" ><img src="${game.image}" alt="${game.title}" /></div></div>`,
-			detailContainer = `<div class="col-lg-8"><h2 class="mt-1" >${game.title} ${game.subTitle ? `<small>${game.subTitle}</small>` : ''}</h2> <p>${game.short}</p></div>`;
+			detailContainer = `<div class="col-lg-8"><h2 class="mt-1" >${game.title} ${game.subTitle ? `<small>${game.subTitle}</small>` : ''}</h2> <p>${game.short ? game.short : ''}</p></div>`;
 
 		var descriptionStr = "";
 		game.description.forEach(desc => {
@@ -112,7 +200,7 @@ var GamesPage = (function () {
 			footerContainer = `<div class="row"><div class="col-lg-12">${linksStr} ${game.disclaimer ? `<p class="text-center"><small class="disclaimer">${game.disclaimer}</small></p>` : ''}</div></div>`,
 			container = `<div class="row"><div class="col-lg-12">${baseContainer} ${descriptionContainer} ${footerContainer} <hr/></div></div>`;
 
-		$('#container-games').append(container);
+		return container;
 	}
 
 	return {
