@@ -88,6 +88,10 @@ var GamesPage = (function () {
 		});
 	}
 
+	initAddons = function() {
+		
+	}
+	
 	appendGame = function(game) {
 		var imgContainer = `<div class="col-lg-4"><div class="img-container" ><img src="${game.image}" alt="${game.title}" /></div></div>`,
 			detailContainer = `<div class="col-lg-8"><h2 class="mt-1" >${game.title} ${game.subTitle ? `<small>${game.subTitle}</small>` : ''}</h2> <p>${game.short}</p></div>`;
@@ -105,14 +109,10 @@ var GamesPage = (function () {
 
 		var	baseContainer = `<div class="row">${imgContainer} ${detailContainer}</div>`,
 			descriptionContainer = `<div class="row"><div class="col-lg-12">${descriptionStr}</div></div>`,
-			footerContainer = `<div class="row"><div class="col-lg-12">${linksStr} ${game.disclaimer ? `<p><small>${game.disclaimer}</small></p>` : ''}</div></div>`,
+			footerContainer = `<div class="row"><div class="col-lg-12">${linksStr} ${game.disclaimer ? `<p class="text-center"><small class="disclaimer">${game.disclaimer}</small></p>` : ''}</div></div>`,
 			container = `<div class="row"><div class="col-lg-12">${baseContainer} ${descriptionContainer} ${footerContainer} <hr/></div></div>`;
 
 		$('#container-games').append(container);
-	}
-
-	initAddons = function() {
-
 	}
 
 	return {

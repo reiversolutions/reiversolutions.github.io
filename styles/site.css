@@ -24,6 +24,9 @@ a.link-game {
 a.link-game:last-child {
     border-right: none;
 }
+small.disclaimer {
+    font-size: 10px;
+}
 /*** /Games ***/
 
 
