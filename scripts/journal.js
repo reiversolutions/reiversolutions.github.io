@@ -10,11 +10,7 @@ var JournalPage = (function () {
 
 	initCurrentGames = function() {
 		var games = [
-			{
-				title: 'Familia Myth',
-				system: 'FATE',
-				type: 'PbP'
-			}
+			
 		];
 
 		var $container = $('#container-current-games');
