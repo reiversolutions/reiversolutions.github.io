@@ -22,8 +22,8 @@ var JournalPage = (function () {
 	initCurrentCharacters = function() {
 		var characters = [
 			{
-				name: 'Flu',
-				role: 'Mutated Influenza super-hero',
+				name: 'Radiant Justice',
+				role: 'Necromancer popular girl super-hero',
 				title: 'Hoodz',
 				system: 'Masks <small>(PbtA)</small>',
 				type: 'Table'
@@ -33,13 +33,6 @@ var JournalPage = (function () {
 				role: 'Silver-tongue',
 				title: 'Age of Adventure',
 				system: 'Savage Worlds <small>Adventure Edition</small>',
-				type: 'PbP'
-			},
-			{
-				name: 'James "<i>Haze</i>" Paris Lee',
-				role: 'Hound',
-				title: 'Thieves in the Night',
-				system: 'Blades in the Dark',
 				type: 'PbP'
 			}
 		];
@@ -107,6 +100,20 @@ var JournalPage = (function () {
 
 	initPreviousCharacters = function() {
 		var characters = [
+			{
+				name: 'Flu',
+				role: 'Mutated Influenza super-hero',
+				title: 'Hoodz',
+				system: 'Masks <small>(PbtA)</small>',
+				type: 'Table'
+			},
+			{
+				name: 'James "<i>Haze</i>" Paris Lee',
+				role: 'Hound',
+				title: 'Thieves in the Night',
+				system: 'Blades in the Dark',
+				type: 'PbP'
+			},
 			{
 				name: 'Hexblade Sgt Dimble Tauren Nim, Claimer of No Man&apos;s Land, Seeker of Truth, Master of Mor&apos;ganes - The Shadow, Catcher of the Many Falling, Killer of Small Birds, Dark Destroyer of Goblins, Killer of Jaculi, Screaming Vengeance on All Velociraptors',
 				role: 'Gnome Hexblade',
