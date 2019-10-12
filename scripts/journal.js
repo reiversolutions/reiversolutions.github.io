@@ -10,11 +10,7 @@ var JournalPage = (function () {
 
 	initCurrentGames = function() {
 		var games = [
-			{
-				title: 'Familia Myth',
-				system: 'FATE',
-				type: 'PbP'
-			}
+			
 		];
 
 		var $container = $('#container-current-games');
@@ -26,18 +22,18 @@ var JournalPage = (function () {
 	initCurrentCharacters = function() {
 		var characters = [
 			{
-				name: 'James "<i>Haze</i>" Paris Lee',
-				role: 'Hound',
-				title: 'Thieves in the Night',
-				system: 'Blades in the Dark',
-				type: 'PbP'
+				name: 'Radiant Justice',
+				role: 'Necromancer popular girl super-hero',
+				title: 'Hoodz',
+				system: 'Masks <small>(PbtA)</small>',
+				type: 'Table'
 			},
 			{
-				name: 'Hexblade Sgt Dimble Tauren Nim, Claimer of No Man&apos;s Land, Seeker of Truth, Master of Mor&apos;ganes - The Shadow, Catcher of the Many Falling, Killer of Small Birds, Dark Destroyer of Goblins, Killer of Jaculi, Screaming Vengeance on All Velociraptors',
-				role: 'Gnome Hexblade',
-				title: 'Tomb of Annihilation',
-				system: 'D&D <small>5e</small>',
-				type: 'Online'
+				name: 'Marella Lethe',
+				role: 'Silver-tongue',
+				title: 'Age of Adventure',
+				system: 'Savage Worlds <small>Adventure Edition</small>',
+				type: 'PbP'
 			}
 		];
 
@@ -49,6 +45,11 @@ var JournalPage = (function () {
 
 	initPreviousGames = function() {
 		var games = [
+			{
+				title: 'It&apos;s Always Sunny in Mudwater',
+				system: 'Fistful of Darkness <small>(BitD)</small>',
+				type: 'Table'
+			},
 			{
 				title: 'He&apos;s Just Sleeping',
 				system: 'Blades in the Dark',
@@ -99,6 +100,27 @@ var JournalPage = (function () {
 
 	initPreviousCharacters = function() {
 		var characters = [
+			{
+				name: 'Flu',
+				role: 'Mutated Influenza super-hero',
+				title: 'Hoodz',
+				system: 'Masks <small>(PbtA)</small>',
+				type: 'Table'
+			},
+			{
+				name: 'James "<i>Haze</i>" Paris Lee',
+				role: 'Hound',
+				title: 'Thieves in the Night',
+				system: 'Blades in the Dark',
+				type: 'PbP'
+			},
+			{
+				name: 'Hexblade Sgt Dimble Tauren Nim, Claimer of No Man&apos;s Land, Seeker of Truth, Master of Mor&apos;ganes - The Shadow, Catcher of the Many Falling, Killer of Small Birds, Dark Destroyer of Goblins, Killer of Jaculi, Screaming Vengeance on All Velociraptors',
+				role: 'Gnome Hexblade',
+				title: 'Tomb of Annihilation',
+				system: 'D&D <small>5e</small>',
+				type: 'Online'
+			},
 			{
 				name: 'Emerald Sole',
 				role: 'Merchant <small>hounded by his Goddess of Trade wife</small>',
