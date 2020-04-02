@@ -12,7 +12,7 @@ var JournalPage = (function () {
 		var games = [
 			{
 				title: 'Dullahan',
-				system: 'Savage Worlds <small>(Adventures Edition)</small>',
+				system: 'Savage Worlds <small>(Adventure Edition)</small>',
 				type: 'Table'
 			}
 		];
