@@ -10,7 +10,11 @@ var JournalPage = (function () {
 
 	initCurrentGames = function() {
 		var games = [
-			
+			{
+				title: 'Dullahan',
+				system: 'Savage Worlds <small>(Adventure Edition)</small>',
+				type: 'Table'
+			}
 		];
 
 		var $container = $('#container-current-games');
@@ -21,20 +25,7 @@ var JournalPage = (function () {
 
 	initCurrentCharacters = function() {
 		var characters = [
-			{
-				name: 'Radiant Justice',
-				role: 'Necromancer popular girl super-hero',
-				title: 'Hoodz',
-				system: 'Masks <small>(PbtA)</small>',
-				type: 'Table'
-			},
-			{
-				name: 'Marella Lethe',
-				role: 'Silver-tongue',
-				title: 'Age of Adventure',
-				system: 'Savage Worlds <small>Adventure Edition</small>',
-				type: 'PbP'
-			}
+			
 		];
 
 		var $container = $('#container-current-characters');
@@ -100,6 +91,27 @@ var JournalPage = (function () {
 
 	initPreviousCharacters = function() {
 		var characters = [
+			{
+				name: 'Cyclopes',
+				role: 'One eyed technomancers with bird companions',
+				title: 'Before the Storm',
+				system: 'Legacy: Life among Ruins <small>2e (PbtA)</small>',
+				type: 'Table'
+			},
+			{
+				name: 'Radiant Justice',
+				role: 'Necromancer popular girl super-hero',
+				title: 'Hoodz',
+				system: 'Masks <small>(PbtA)</small>',
+				type: 'Table'
+			},
+			{
+				name: 'Marella Lethe',
+				role: 'Silver-tongue',
+				title: 'Age of Adventure',
+				system: 'Savage Worlds <small>Adventure Edition</small>',
+				type: 'PbP'
+			},
 			{
 				name: 'Flu',
 				role: 'Mutated Influenza super-hero',
