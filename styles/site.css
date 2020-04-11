@@ -34,6 +34,44 @@ small.disclaimer {
 }
 /*** /Games ***/
 
+/** Metal Overture **/
+section.partition {
+    min-height: 100vh;
+}
+
+section.partition.heavymetal {
+    background-color: #333431;
+    color: #ffffff;
+}
+
+section.partition.shark {
+    background-color: #1b1c1f;
+    color: #ffffff;
+}
+
+section.partition.nightrider {
+    background-color: #1b100c;
+    color: #ffffff;
+}
+
+.poster {
+    padding-top: 8vh;
+}
+
+.poster img, .intro img {
+    width: 100%;
+    padding: 10px;
+}
+
+.poster h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+/** /Metal Overture **/
 
 /*** Footer ***/
 footer .social {
