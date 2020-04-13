@@ -94,7 +94,7 @@ var JournalPage = (function () {
 			{
 				name: 'Cyclopes',
 				role: 'One eyed technomancers with bird companions',
-				title: 'Before the Storm',
+				title: 'One of the Tribe',
 				system: 'Legacy: Life among Ruins <small>2e (PbtA)</small>',
 				type: 'Table'
 			},
