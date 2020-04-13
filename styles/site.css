@@ -35,6 +35,11 @@ small.disclaimer {
 /*** /Games ***/
 
 /** Metal Overture **/
+.partition .container .row {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 section.partition {
     min-height: 100vh;
 }
@@ -70,6 +75,22 @@ section.partition.nightrider {
 
 .intro p {
     font-size: 1.2rem;
+}
+
+.playtest h3 {
+    font-size: 8rem;
+}
+
+.playtest div.description {
+    display: flex;
+    width: 50%;
+    height: 200px;
+    margin: auto;
+}
+
+.playtest p.description {
+    margin: auto;
+    text-align: center;
 }
 /** /Metal Overture **/
 
