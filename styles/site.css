@@ -12,6 +12,14 @@ blockquote.blockquote {
     padding-left: 10px;
 }
 
+h2 {
+    font-family: 'New Rocker', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 /*** Games ***/
 .img-container {
     width: 80%;
@@ -71,6 +79,12 @@ section.partition.nightrider {
 .poster h1 {
     text-align: center;
     font-size: 4rem;
+}
+
+.partition .social {
+    padding-top: 1vh;
+    font-size: 56px;
+    text-align: center;
 }
 
 .intro p {
