@@ -11,8 +11,8 @@ var JournalPage = (function () {
 	initCurrentGames = function() {
 		var games = [
 			{
-				title: 'Dullahan',
-				system: 'Savage Worlds <small>(Adventure Edition)</small>',
+				title: 'Town of Ballawick',
+				system: 'RuralPunk <small>(BitD)</small>',
 				type: 'Table'
 			}
 		];
@@ -36,6 +36,16 @@ var JournalPage = (function () {
 
 	initPreviousGames = function() {
 		var games = [
+			{
+				title: 'TCD',
+				system: 'Slugblasters <small>(BitD)</small>',
+				type: 'Online'
+			},
+			{
+				title: 'Dullahan',
+				system: 'Savage Worlds <small>(Adventure Edition)</small>',
+				type: 'Table'
+			},
 			{
 				title: 'It&apos;s Always Sunny in Mudwater',
 				system: 'Fistful of Darkness <small>(BitD)</small>',
